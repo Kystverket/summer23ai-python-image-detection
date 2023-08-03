@@ -1,8 +1,8 @@
-# Python-image-detection
+# Python Image Detection
 Template for using Yolo PyTourch models for image detection.
 
-
-## Documentation `Detector.py`
+## Documentation
+### Documentation `Detector.py`
 The `Detector.py` is a simplification of the `YOLO` methods in the `Ultralytics`. It is created to drastically simplify the methods, thus also putting many limitations on the results. For a more detailed analysis, the `YOLO` methods can be used on their own (as shown in XXXX).
 
 - `Detector(model_path)`: Takes in a trained model in the `.pt PyTourch` format. This initializes a detection object which can classify objects from the trained model.
