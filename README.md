@@ -1,5 +1,10 @@
 # Python Image Detection
-Template for using Yolo PyTourch models for image detection.
+Template for using Yolo PyTorch models for image detection.
+## Getting started
+1. Clone or download this directory
+2. Run `pip install -r requirements.txt` (this installs all the Python packages required)
+3. Try one of our demo programs
+
 
 ## Documentation
 ### Documentation `Detector.py`
