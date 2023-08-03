@@ -29,7 +29,7 @@ class Detector:
         if save_image:
             im_plot = image_result.plot()
             if save_filename is None:
-                save_filename = "image" + str(self.predicted_images_count) + ".jpg"
+                save_filename = "image" + str(self.images_count) + ".jpg"
                 self.images_count += 1
             print(self.PREDICTION_FOLDER_PATH +  save_filename)
             cv2.imwrite(self.PREDICTION_FOLDER_PATH +  save_filename ,im_plot)
@@ -55,20 +55,7 @@ class Detector:
     
     
 
-imo_list = [5181457,9818321,9841782,9857119] 
 
-detector = Detector("models/excavatorV8s.pt")
-classified_imo = {}
-for imo in imo_list:
-    image_url = "https://www.ship-info.com/Vessels/" + str(imo) + ".jpg" # Replace with your image URL
-    response = requests.get(image_url)
-    image_array = np.asarray(bytearray(response.content), dtype=np.uint8)
-    image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
-    #image.save("./loaded/image" + str(imo) + ".jpg")  # Replace with the desired file path
-    classified_imo[imo] = detector.find_objects_image(image,save_image=True,save_filename=str(imo) + ".jpg")
-    
-
-print(classified_imo)
 
 
 
