@@ -11,12 +11,14 @@ This project aims to simplify the process of image detection in `YOLOv8`, in ord
 If you have a pre-trained model (.pt file), you can just pass the in the relative path to the model when initializing a `YOLO` or a `Detector` object. An example of this is found in the `demo.ipynb` file.
 
 ## Making, training, and using a custom data set
-When wanting to detect custom , we need to make our own model. In short, this is done by labeling a set of images, and running training a model using our labeled images.
+When wanting to detect custom, we need to make our own model. In short, this is done by labeling a set of images and running training a model using our labeled images.
+
 ### Making a custom dataset
-
+When we label our dataset, we "draw" boxes around the objects we want to detect and classify them to their category ("Excavator", "Lighthouse" etc). We also need to separate the images into a training, validation, and test set. There are many ways of doing this, but we recommend using [`Roboflow`](https://blog.roboflow.com/getting-started-with-roboflow/). They provide a simple user interface for labeling images and a quick way of exporting the dataset.
 ### Training a model using a custom dataset
-
+When training the model, we need a powerfull `GPU`. In `Google Colab` we can take advantage of their built in `GPU` to train our model. A full tutorial can be found [here](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing).
 ### Using a model 
+After training the model, you obtain a `PyTorch` file (.pt). Using this file, you can run your model as with any of the pre-trained models.
 
 
 ## Documentation
