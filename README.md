@@ -1,9 +1,22 @@
-# Python Image Detection
-Template for using Yolo PyTorch models for image detection.
+# Python Image Detection (Kystverket AI summer interns 2023)
+Template for using Yolo PyTorch models for image detection. 
+## About
+This project aims to simplify the process of image detection in `YOLOv8`, in order to enable more people to label, train and use an image detection model.
 ## Getting started
 1. Clone or download this directory
 2. Run `pip install -r requirements.txt` (this installs all the Python packages required)
-3. Try one of our demo programs
+3. Try the [`demo.ipynb`](vg.no) notebook to get an understanding of image detection.
+
+## Using a pre-trained model
+If you have a pre-trained model (.pt file), you can just pass the in the relative path to the model when initializing a `YOLO` or a `Detector` object. An example of this is found in the `demo.ipynb` file.
+
+## Making, training, and using a custom data set
+When wanting to detect custom , we need to make our own model. In short, this is done by labeling a set of images, and running training a model using our labeled images.
+### Making a custom dataset
+
+### Training a model using a custom dataset
+
+### Using a model 
 
 
 ## Documentation
