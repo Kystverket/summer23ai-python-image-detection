@@ -1,5 +1,5 @@
 # Python Image Detection (Kystverket AI summer interns 2023)
-Template for using Yolo PyTourch models for image detection.
+Template for using Yolo PyTorch models for image detection.
 
 ## Table of Contents
 - [About](#about)
