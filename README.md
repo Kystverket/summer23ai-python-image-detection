@@ -30,15 +30,15 @@ When wanting to detect custom, we need to make our own model. In short, this is 
 When we label our dataset, we "draw" boxes around the objects we want to detect and classify them to their category ("Excavator", "Lighthouse" etc). We also need to separate the images into a training, validation, and test set. There are many ways of doing this, but we recommend using [`Roboflow`](https://blog.roboflow.com/getting-started-with-roboflow/). They provide a simple user interface for labeling images and a quick way of exporting the dataset.
 ### Training a model using a custom dataset
 When training the model, we need a powerfull `GPU`. In `Google Colab` we can take advantage of their built in `GPU` to train our model. A full tutorial can be found [here](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing).
-### Using a model 
-After training the model, you obtain a `PyTorch` file (.pt). Using this file, you can run your model as with any of the pre-trained models.
+### Exporting and using a model 
+After training the model, you obtain a `PyTorch` file (.pt). Using this file, you can run your model as with any of the pre-trained models. See the [tutorial](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing) under "Exporting the model".
 
 
 ## Documentation
 ### Documentation `Detector.py`
 The `Detector.py` is a simplification of the `YOLO` methods in the `Ultralytics`. It is created to drastically simplify the methods, thus also putting many limitations on the results. For a more detailed analysis, the `YOLO` methods can be used on their own (as shown in XXXX).
 
-- `Detector(model_path)`: Takes in a trained model in the `.pt PyTourch` format. This initializes a detection object which can classify objects from the trained model.
+- `Detector(model_path)`: Takes in a trained model in the `.pt PyTorch` format. This initializes a detection object which can classify objects from the trained model.
 - `find_objects_image(image, conf, show_all, save_image, save_filename)`: Takes in an image and returns a list of found objects with their corresponding probability on the format `(object, prob)`. The method can be modified by adjusting different parameters, with the only required input being the image.
     - `image`: The image where we want to detect objects.
     - `conf = 0.5`: The level of confidence before we add the object to the detected objects.
