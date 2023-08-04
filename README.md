@@ -16,7 +16,7 @@ Template for using Yolo PyTorch models for image detection.
 This project aims to simplify the process of image detection in `YOLOv8`, in order to enable more people to label, train and use an image detection model.
 ## Getting started
 1. Clone or download this directory
-2. In the command prompt `cd` into the folder
+2. Navigate to this directory in the command prompt
 3. Run `pip install -r requirements.txt` (this installs all the Python packages required)
 4. Try the [`demo.ipynb`](vg.no) notebook to get an understanding of image detection.
 
