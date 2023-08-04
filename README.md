@@ -20,10 +20,10 @@ This project aims to simplify the process of image detection in `YOLOv8`, enabli
 1. Clone or download this directory.
 2. Navigate to this directory in the command prompt.
 3. Run `pip install -r requirements.txt` (this installs all the Python packages required).
-4. Try the [`demo.ipynb`](vg.no) notebook to get an understanding of image detection.
+4. Try the [`demo.ipynb`](demo.ipynb) notebook to get an understanding of image detection.
 
 ## Using a Pre-Trained Model
-If you have a pre-trained model (.pt file), you can pass in the relative path to the model when initializing a `YOLO` or a `Detector` object. An example of this is found in the `demo.ipynb` file.
+If you have a pre-trained model (.pt file), you can pass in the relative path to the model when initializing a `YOLO` or a `Detector` object. An example of this is found in the [`demo.ipynb`](demo.ipynb) file.
 
 ## Making, Training, and Using a Custom Data Set
 ### Making a Custom Dataset
