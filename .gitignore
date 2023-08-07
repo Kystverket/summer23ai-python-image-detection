@@ -1,2 +1,7 @@
+predictions/
 !predictions/.gitkeep
 __pycache__
+
+excel/
+!excel/gravemaskin.xlsx
+!excel/skipsliste.xlsx
