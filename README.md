@@ -40,7 +40,7 @@ After training, you obtain a `PyTorch` file (.pt). You can run your model as wit
 Refer to [the Ultralytics YOLO documentation](https://docs.ultralytics.com/).
 
 ### Documentation `Detector.py`
-`Detector.py` simplifies the `YOLO` methods in `Ultralytics`, making them easier to use but with some limitations. For detailed analysis, use the `YOLO` methods directly (as shown in XXXX).
+`Detector.py` simplifies the `YOLO` methods in `Ultralytics`, making them easier to use but with some limitations. For detailed analysis, use the `YOLO` methods directly (as shown in `demo.ipynb).
 - `Detector(model_path)`: Initializes a detection object with a trained model in `.pt PyTorch` format.
 - `find_objects_image(image, conf, show_all, save_image, save_filename)`: Detects objects in an image, with customizable parameters.
 
