@@ -27,7 +27,7 @@ If you have a pre-trained model (.pt file), you can pass in the relative path to
 
 ## Making, Training, and Using a Custom Data Set
 ### Making a Custom Dataset
-Label your dataset by "drawing" boxes around the objects you want to detect and classifying them into categories ("Excavator", "Lighthouse", etc.). Separate the images into training, validation, and test sets. We recommend using [`Roboflow`](https://blog.roboflow.com/getting-started-with-roboflow/).
+Label your dataset by "drawing" boxes around the objects you want to detect and classifying them into categories ("Excavator", "Lighthouse", etc.). Separate the images into training, validation, and test sets. We recommend using [`Roboflow`](https://blog.roboflow.com/getting-started-with-roboflow/). Our own Gravemaskin dataset is available here: [Roboflow - Gravemaskin Dataset](https://universe.roboflow.com/ntnu-3oxpl/gravemaskin).
 
 ### Training a Model Using a Custom Dataset
 Train the model using a powerful `GPU`. In `Google Colab`, you can take advantage of their built-in `GPU`. A full tutorial is available [here](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing).
