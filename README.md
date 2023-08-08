@@ -37,8 +37,8 @@ After training, you obtain a `PyTorch` file (.pt). You can run your model as wit
 
 ## Documentation
 ### Documentation YOLOv8
-Refer to [the Ultralytics YOLO documentation](https://docs.ultralytics.com/).
-[Object Detection 101](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing)
+- Refer to [the Ultralytics YOLO documentation](https://docs.ultralytics.com/).
+- [Object Detection 101](https://colab.research.google.com/drive/1GLWpHQ8mNH1Mfj1RJzq4046cb_qbuInI?usp=sharing)
 
 ### Documentation `Detector.py`
 `Detector.py` simplifies the `YOLO` methods in `Ultralytics`, making them easier to use but with some limitations. For detailed analysis, use the `YOLO` methods directly (as shown in the end of `demo.ipynb`).
